@@ -27,3 +27,18 @@ npx json-server --watch db.json
 after that can run ```json-server --watch db.json```
 
 **use javascript fetch method to fetch data**
+
+### custom text for required validation
+
+created custom warning text for required validation but it will display in the initial page reload. to avoid that we created state and triggered onMouseDown 
+`onMouseDown` event is employed on the "Name" input field to trigger the display of a warning message. 
+                                        
+```jsx
+<input
+   value={name}
+   required
+   onMouseDown={(e) => setWarningmsg(true)}
+   onChange={(e) => setName(e.target.value)}
+   className="form-control"
+/>
+
