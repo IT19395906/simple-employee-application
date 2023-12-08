@@ -25,3 +25,5 @@ npx json-server --watch db.json
 
 **or you can install globally typing ```npm install -g json-server```** 
 after that can run ```json-server --watch db.json```
+
+**use javascript fetch method to fetch data**
