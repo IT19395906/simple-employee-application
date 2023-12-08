@@ -35,8 +35,8 @@ created custom warning text for required validation but it will display in the i
 ```
 {name.length === 0 && <span className="text-danger">Enter name</span>}
 ```
-to avoid that created state and triggered onMouseDown 
-`onMouseDown` event is employed on the "Name" input field to trigger the display of a warning message. 
+to avoid that created a state variable and utilized onMouseDown event 
+onMouseDown event is employed on the "Name" input and triggers the display of the warning message when the user interacts with the input
                                         
 ```jsx
 <input
