@@ -30,7 +30,11 @@ after that can run ```json-server --watch db.json```
 
 ### custom text for required validation
 
-created custom warning text for required validation but it will display in the initial page reload. to avoid that we created state and triggered onMouseDown 
+created custom warning text for required validation but it will display in the initial page reload. 
+```
+{name.length === 0 && <span className="text-danger">Enter name</span>}
+``
+to avoid that we created state and triggered onMouseDown 
 `onMouseDown` event is employed on the "Name" input field to trigger the display of a warning message. 
                                         
 ```jsx
